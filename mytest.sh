@@ -13,4 +13,5 @@
 #PBS -N Test_Job
 #PBS -V
 cd $PBS_O_WORKDIR #change to the working directory
-mpirun_rsh -np 96  -hostfile $PBS_NODEFILE python test.py
+PYTHON=/home/diag/opt/mpi4py/mvapich2/intel/1.3.1/lib/python/mpi4py/bin/python-mpi
+mpirun_rsh -np 96  -hostfile $PBS_NODEFILE $PYTHON test.py
