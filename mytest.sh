@@ -2,7 +2,7 @@
 # the queue to be used
 #PBS -q normal
 # specify your project allocation
-#PBS -A uic314
+##PBS -A uic314
 # number of nodes and number of processors per node requested
 #PBS -l nodes=3:ppn=32
 # requested Wall-clock time.
